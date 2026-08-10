@@ -77,6 +77,9 @@ To run this platform inside your local workstation, execute the following workfl
 4. Fire up your active browser application and navigate to: 'http://localhost:5173'
 
 🚀 Commands to Upload it to GitHub:Open your Command Prompt (cmd) inside your project directory and execute these three terminal steps:
+
 git add README.md
-git commit -m "docs: added professional english documentation in README"
+
+git commit -m "docs: finalized local setup documentation"
+
 git push origin main
