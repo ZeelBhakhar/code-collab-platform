@@ -67,12 +67,12 @@ To run this platform inside your local workstation, execute the following workfl
 
 2. Provision global node dependency packages:
    ```bash
-   npm install
+   pnpm install
    ```
 
 3. Spin up the localized compiler development environments:
    ```bash
-   npm run dev
+   pnpm run dev
    ```
 4. Fire up your active browser application and navigate to: 'http://localhost:5173'
 
