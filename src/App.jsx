@@ -95,7 +95,7 @@ function App() {
   }, [selectedLanguage])
 
   useEffect(() => {
-    const socket = io(import.meta.env.VITE_SOCKET_URL ?? 'https://onrender.com', {
+    const socket = io(import.meta.env.VITE_SOCKET_URL ?? 'https://code-collab-platform-edb7.onrender.com', {
       transports: ['websocket'],
     })
 
