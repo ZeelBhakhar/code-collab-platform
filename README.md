@@ -5,10 +5,13 @@ CollabCode is a real-time collaborative coding platform designed to help develop
 The platform enables multiple users to work on the same code simultaneously, with changes synchronized instantly through WebSockets. It also provides a live preview panel so users can execute and visualize their HTML, CSS, and JavaScript code in real time.
 
 🌐 Live Demo
-Frontend: https://code-collab-platform-snowy.vercel.app 
+
+Frontend: https://code-collab-platform-snowy.vercel.app
+
 Backend API: https://code-collab-platform-edb7.onrender.com 
 
 ✨ Features
+
 🔄 Real-Time Code Synchronization
 
 Multiple users can edit code simultaneously inside the same room. Code changes are synchronized instantly using WebSocket-based communication.
@@ -74,8 +77,6 @@ To run this platform inside your local workstation, execute the following workfl
 4. Fire up your active browser application and navigate to: 'http://localhost:5173'
 
 🚀 Commands to Upload it to GitHub:Open your Command Prompt (cmd) inside your project directory and execute these three terminal steps:
-'''bash 
 git add README.md
 git commit -m "docs: added professional english documentation in README"
 git push origin main
-'''
