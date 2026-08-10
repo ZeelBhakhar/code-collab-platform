@@ -95,7 +95,7 @@ function App() {
   }, [selectedLanguage])
 
   useEffect(() => {
-    const socket = io(import.meta.env.VITE_SOCKET_URL ?? 'http://127.0.0.1:3001', {
+    const socket = io(import.meta.env.VITE_SOCKET_URL ?? 'https://onrender.com', {
       transports: ['websocket'],
     })
 
