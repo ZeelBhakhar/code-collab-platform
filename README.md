@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 CollabCode – Real-Time Code Collaboration Platform
 
-## Getting Started
+CollabCode is a real-time collaborative coding platform designed to help developers write, edit, and test code together in shared online rooms.
 
-First, run the development server:
+The platform enables multiple users to work on the same code simultaneously, with changes synchronized instantly through WebSockets. It also provides a live preview panel so users can execute and visualize their HTML, CSS, and JavaScript code in real time.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+🌐 Live Demo
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Frontend: https://code-collab-platform-snowy.vercel.app
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Backend API: https://code-collab-platform-edb7.onrender.com 
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+✨ Features
 
-## Learn More
+🔄 Real-Time Code Synchronization
 
-To learn more about Next.js, take a look at the following resources:
+Multiple users can edit code simultaneously inside the same room. Code changes are synchronized instantly using WebSocket-based communication.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+💻 Professional Code Editor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+CollabCode uses Monaco Editor, the same editor technology that powers Visual Studio Code, providing a familiar and powerful coding experience.
 
-## Deploy on Vercel
+⚡ Live Code Preview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Users can execute their HTML, CSS, and JavaScript code and instantly view the output inside a secure preview area using an HTML <iframe>.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+🏠 Collaborative Rooms
+
+Each session is organized into a unique room. Users can create a room and share the Room ID with other developers to start collaborating.
+
+👥 Multi-User Collaboration
+
+Multiple users can join the same room and work together on the same codebase in real time.
+
+🌙 Responsive Dark UI
+
+The application provides a modern dark-themed interface designed for comfortable and focused coding sessions.
+
+🛠️ Technology Stack
+Category:	Technology
+Frontend:	React.js, Vite
+Code Editor:	Monaco Editor
+Styling:	CSS3
+Backend:	Node.js, Express.js
+Real-Time Communication:	Socket.io, WebSockets
+Frontend Deployment:	Vercel
+Backend Deployment:	Render
+
+🔁 How It Works
+A user creates a new collaboration room or joins an existing room using a Room ID.
+The React frontend establishes a WebSocket connection with the Node.js backend.
+When a user modifies the code, the frontend emits a code-change event through Socket.io.
+The backend receives the updated code and identifies the users connected to the same room.
+The updated code is broadcast to other users in that room.
+Connected clients receive the update and automatically synchronize their editors.
+Users can execute the code and view the result through the live preview panel.
+
+🔧 Local Development Setup
+
+To run this platform inside your local workstation, execute the following workflow:
+
+1. Clone the remote repository down to your computer:
+   ```bash
+   git clone https://github.com/ZeelBhakhar/code-collab-platform 
+   cd code-collab-platform
+   ```
+
+2. Provision global node dependency packages:
+   ```bash
+   pnpm install
+   ```
+
+3. Spin up the localized compiler development environments:
+   ```bash
+   pnpm run dev
+   ```
+4. Fire up your active browser application and navigate to: 'http://localhost:5173'
+
+🚀 Commands to Upload it to GitHub:Open your Command Prompt (cmd) inside your project directory and execute these three terminal steps:
+
+git add README.md
+
+git commit -m "docs: finalized local setup documentation"
+
+git push origin main
